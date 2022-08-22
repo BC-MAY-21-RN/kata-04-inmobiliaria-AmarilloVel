@@ -1,14 +1,7 @@
 import React from "react";
 import { View, StyleSheet,Text,ImageBackground} from "react-native";
-
 import Card from "../components/Card";
 
-/*
-
-        
-
-
-*/
 export default function Home(){
 
     return(
@@ -19,8 +12,6 @@ export default function Home(){
         <Card/>
         <Card/>
         <Card/>
-
-        
     </View>
     
     )

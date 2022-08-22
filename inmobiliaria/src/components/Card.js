@@ -1,6 +1,8 @@
 import React from "react";
-import { View,StyleSheet,ImageBackground,Text } from "react-native";
-import { backgroundCardColor,starColor,ratingText } from "../constants/colors";
+import { View,StyleSheet } from "react-native";
+import { backgroundCardColor} from "../constants/colors";
+import DescriptionSection from "./DescriptionSection";
+import Like from "./Like";
 import RatingSection from "./RatingSection";
 
 export default function Card(){
@@ -8,10 +10,11 @@ export default function Card(){
     return(
         <View style={styles.card}>
             <RatingSection/>
+            <DescriptionSection/>
+            <Like/>
         </View>
     )
 }
-
 const styles = StyleSheet.create({
     card:{
         flexDirection:'row',
