@@ -5,7 +5,7 @@ import DescriptionSection from "./DescriptionSection";
 import Like from "./Like";
 import RatingSection from "./RatingSection";
 
-export default function Card(){
+export default function Card({/*img,nombre,location,numBath,numBedrooms,feets,price*/}){
    
     return(
         <View style={styles.card}>
