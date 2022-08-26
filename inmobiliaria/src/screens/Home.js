@@ -1,6 +1,7 @@
 import React from "react";
 import { View, StyleSheet,Text,ImageBackground} from "react-native";
 import Card from "../components/Card";
+import CardList from "../components/CardList";
 import * as data from "../constants/data.json"
 
 export default function Home(){
@@ -19,11 +20,9 @@ export default function Home(){
     return(
         
     <View style={styles.container}>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
+       <CardList
+       
+       />
     </View>
     
     )

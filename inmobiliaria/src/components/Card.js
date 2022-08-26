@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     card:{
         flexDirection:'row',
         backgroundColor:backgroundCardColor,
-        width:"88%",
+        width:350,
         height:135,
         borderRadius:15,
         margin:10
