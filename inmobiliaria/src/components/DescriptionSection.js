@@ -4,24 +4,25 @@ import { FontAwesome } from "@expo/vector-icons";
 import Specification from "./Specification";
 
 
-const DescriptionSection = () => {
+const DescriptionSection = ({title,location,price,specifications}) => {
+    console.log(specifications)
     return(
         <View style={styles.descriptionContainer}>
             {/*Title */}
-            <Text style={styles.title}>The Willows</Text>
+            <Text style={styles.title}>{title}</Text>
             {/*Ubication*/}
             <View style={styles.rowContainer}>
                 <FontAwesome name="map-marker" size={15} style={{paddingTop:3}} color="black"/>
-                <Text style={styles.ubicationText}> 3517 W. Gray St. Utica</Text>
+                <Text style={styles.ubicationText}> {location}</Text>
             </View>
             {/*Specifications*/}
             <View style={styles.SpecContainer}>
-                <Specification/>
-                <Specification/>
-                <Specification/>
+                <Specification number={specifications.bedrooms}/>
+                <Specification number={specifications.baths}/>
+                <Specification number={specifications.feet}/>
             </View>
             {/* Price */}
-            <Text style={styles.priceText}>$400/m</Text>
+            <Text style={styles.priceText}>${price}/m</Text>
         </View>
     )
 

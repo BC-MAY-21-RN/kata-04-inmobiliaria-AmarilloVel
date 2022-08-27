@@ -5,12 +5,13 @@ import DescriptionSection from "./DescriptionSection";
 import Like from "./Like";
 import RatingSection from "./RatingSection";
 
-export default function Card({/*img,nombre,location,numBath,numBedrooms,feets,price*/}){
+export default function Card({item}){
+    console.log(item)
    
     return(
         <View style={styles.card}>
-            <RatingSection/>
-            <DescriptionSection/>
+            <RatingSection img={item.img} rating={item.rating}/>
+            <DescriptionSection title={item.title} location={item.location} price={item.price} specifications={item.specifications}/>
             <Like/>
         </View>
     )

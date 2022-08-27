@@ -6,11 +6,8 @@ import * as data from "../constants/data.json"
 
 const CardList = () => {
     const renderItem = ({ item }) => (
-            <Card />
+            <Card item={item}/>
     )
-
-
-   
 
     return(
         <View style={styles.container}>

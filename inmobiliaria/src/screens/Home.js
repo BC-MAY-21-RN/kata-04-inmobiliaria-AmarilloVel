@@ -6,23 +6,11 @@ import * as data from "../constants/data.json"
 
 export default function Home(){
 
-    const getInfo = () => {
-        let info = []
-        data.houses.forEach((house) =>{
-            info.push(house)
-        })
-        
-        return info
-    }
-    const info = getInfo();
-    console.log(info)
 
     return(
         
     <View style={styles.container}>
-       <CardList
-       
-       />
+       <CardList/>
     </View>
     
     )

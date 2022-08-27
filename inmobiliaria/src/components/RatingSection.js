@@ -4,14 +4,14 @@ import { backgroundStarColor,starColor,ratingTextColor } from "../constants/colo
 import { FontAwesome } from "@expo/vector-icons";
 
 
-export default function RatingSection(){
-    let image = {uri:'https://img10.naventcdn.com/avisos/9/00/54/42/30/71/1200x1200/102280108.jpg' } 
+export default function RatingSection({img,rating}){
+
     return (
     <>
-        <ImageBackground source={image} resizeMode="cover" style={styles.image} imageStyle={{borderRadius:12}}>
+        <ImageBackground source={{uri: img}} resizeMode="cover" style={styles.image} imageStyle={{borderRadius:12}}>
                 <View style={styles.ratingArea}>
                     <FontAwesome name="star" size={15} style={{paddingTop:3}} color={starColor}/>
-                    <Text style={styles.ratingText}>4.7</Text>
+                    <Text style={styles.ratingText}>{rating}</Text>
                 </View>
         </ImageBackground>
     </>
