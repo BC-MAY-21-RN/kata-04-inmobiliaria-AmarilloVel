@@ -2,10 +2,11 @@ import React from "react";
 import { View,StyleSheet,Text } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
-const Specification = ({number}) => {
+const Specification = ({number,icon}) => {
     return(
         <View style={styles.individualSpec}>
-            <FontAwesome name="bed" size={15} style={{paddingTop:3}} color="grey"/>
+            <FontAwesome name={icon} size={15} style={{paddingTop:3}} color="grey"/>
+            
             <Text style={styles.specNumber}> {number}</Text>
         </View>
     )

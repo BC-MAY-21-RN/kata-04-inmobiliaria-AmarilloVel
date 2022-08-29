@@ -6,7 +6,6 @@ import Like from "./Like";
 import RatingSection from "./RatingSection";
 
 export default function Card({item}){
-    console.log(item)
    
     return(
         <View style={styles.card}>

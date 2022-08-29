@@ -4,12 +4,12 @@
     {
       "id": 1,
       "title": "The Willows",
-      "img": "https://media.istockphoto.com/photos/cheesy-pepperoni-pizza-picture-id938742222?k=20&m=938742222&s=612x612&w=0&h=X5AlEERlt4h86X7U7vlGz3bDaDDGQl4C3MuU99u2ZwQ=",
+      "img": "https://i.pinimg.com/236x/cf/f9/28/cff9288d1846b64aedb19b3aac13f5fd.jpg",
       "location": "3517 W. Gray St. Utica",
       "specifications": {
         "bedrooms": 5,
         "baths": 3,
-        "feet":"230"
+        "feet":"230 ft²"
       },
       "price": 440,
       "rating": 4.5
@@ -17,15 +17,67 @@
     {
       "id": 2,
       "title": "Orchard House",
-      "img": "https://media.istockphoto.com/photos/cheesy-pepperoni-pizza-picture-id938742222?k=20&m=938742222&s=612x612&w=0&h=X5AlEERlt4h86X7U7vlGz3bDaDDGQl4C3MuU99u2ZwQ=",
+      "img": "https://assets.easybroker.com/property_images/800639/12088062/EB-CB0639.?version=1534664646",
       "location": "3517 W. Gray St. Utica",
       "specifications": {
         "bedrooms": 5,
         "baths": 3,
-        "feet":"230"
+        "feet":"280 ft²"
       },
       "price": 470,
       "rating":4.3
+    },
+    {
+      "id": 3,
+      "title": "1000 House",
+      "img": "https://d2op7us8chplo5.cloudfront.net/eyJidWNrZXQiOiJyZXNlbS1teCIsImtleSI6IjMzMjMxLzIwNjAxMTY1OTIucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4NDAsImhlaWdodCI6NjMwLCJmaXQiOiJjb3ZlciIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX19fQ==",
+      "location": "3517 W. Gray St. Utica",
+      "specifications": {
+        "bedrooms": 5,
+        "baths": 3,
+        "feet":"190 ft²"
+      },
+      "price": 470,
+      "rating":4.3
+    },
+    {
+      "id": 4,
+      "title": "The House",
+      "img": "https://pc-2df4.kxcdn.com/wp-content/uploads/2019/03/fachada_departamento_sm12_cancun_islasu302.jpg",
+      "location": "3517 W. Gray St. Utica",
+      "specifications": {
+        "bedrooms": 5,
+        "baths": 3,
+        "feet":"310 ft²"
+      },
+      "price": 470,
+      "rating":4.3
+    },
+    {
+      "id": 5,
+      "title": "Mickey's House",
+      "img": "https://www.bienesonline.com/mexico/photos/apartamento-en-chapala-DER2935261612837317-933.jpg",
+      "location": "3517 W. Gray St. Utica",
+      "specifications": {
+        "bedrooms": 5,
+        "baths": 3,
+        "feet":"200 ft²"
+      },
+      "price": 470,
+      "rating":4.3
+    },
+    {
+      "id": 6,
+      "title": "Mary's House",
+      "img": "https://assets.easybroker.com/property_images/1518475/22799407/EB-EU8475.jpg?version=1586216436",
+      "location": "3517 W. Gray St. Utica",
+      "specifications": {
+        "bedrooms": 5,
+        "baths": 3,
+        "feet":"250 ft²"
+      },
+      "price": 470,
+      "rating":4.8
     }
 
   ]

@@ -5,7 +5,7 @@ import Specification from "./Specification";
 
 
 const DescriptionSection = ({title,location,price,specifications}) => {
-    console.log(specifications)
+  
     return(
         <View style={styles.descriptionContainer}>
             {/*Title */}
@@ -17,9 +17,9 @@ const DescriptionSection = ({title,location,price,specifications}) => {
             </View>
             {/*Specifications*/}
             <View style={styles.SpecContainer}>
-                <Specification number={specifications.bedrooms}/>
-                <Specification number={specifications.baths}/>
-                <Specification number={specifications.feet}/>
+                <Specification number={specifications.bedrooms} icon={'bed'}/>
+                <Specification number={specifications.baths} icon={'bath'}/>
+                <Specification number={specifications.feet} icon={'th-large'}/>
             </View>
             {/* Price */}
             <Text style={styles.priceText}>${price}/m</Text>

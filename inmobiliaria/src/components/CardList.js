@@ -11,6 +11,7 @@ const CardList = () => {
 
     return(
         <View style={styles.container}>
+            <Text style={styles.text}>Inmobiliaria</Text>
             <FlatList 
                 data={data.houses}
                 renderItem={renderItem}
@@ -25,8 +26,17 @@ const CardList = () => {
 
 const styles = StyleSheet.create({
     container: {
-      marginTop:40,
+      marginTop:10,
+      marginBottom:10,
+     
     
       },
+      text:{
+        paddingTop:40,
+        fontSize:25,
+        fontWeight:'800',
+        paddingLeft:120,
+        paddingBottom:10,
+    }
 })
 export default CardList;
