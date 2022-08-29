@@ -8,10 +8,8 @@ export default function Home(){
 
 
     return(
-        
     <View style={styles.container}>
-       
-       <CardList/>
+       <CardList data={data.houses}/>
     </View>
     
     )
@@ -23,10 +21,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     
       },
-    text:{
-        paddingTop:120,
-        fontSize:25,
-        fontWeight:'800'
-    }
+   
 })
 

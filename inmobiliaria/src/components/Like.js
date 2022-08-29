@@ -1,19 +1,25 @@
-import React from "react";
-import { View,StyleSheet,Text } from "react-native";
+import React, {useState} from "react";
+import { StyleSheet,TouchableOpacity } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 import { backgroundHeartColor } from "../constants/colors";
 
 const Like = () =>{
+    const [like,setLike] = useState(true);
+    const [likeColor,setLikeColor] = useState('#c6eee4')
+
+    const changeColor = () => {
+        setLike(!like);
+        (like) ? setLikeColor(backgroundHeartColor) :setLikeColor('#c6eee4')
+    }
     return(
-        <View style={styles.heartContainer}>
+        <TouchableOpacity style={[styles.heartContainer, {backgroundColor:likeColor}]} onPress={changeColor}>
             <FontAwesome name="heart" size={15} style={{paddingTop:3}} color="white"/>
-        </View>
+        </TouchableOpacity>
     )
 }
 const styles = StyleSheet.create({
     heartContainer:{
         position:'absolute',
-        backgroundColor: backgroundHeartColor,
         borderRadius:90,
         paddingVertical:5,
         paddingHorizontal:6,

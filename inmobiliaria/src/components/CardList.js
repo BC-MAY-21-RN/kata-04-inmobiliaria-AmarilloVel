@@ -1,19 +1,18 @@
 import React from "react";
 import { View,FlatList,Text,StyleSheet } from "react-native";
 import Card from "./Card";
-import * as data from "../constants/data.json"
 
-
-const CardList = () => {
+const CardList = ({data}) => {
     const renderItem = ({ item }) => (
-            <Card item={item}/>
+            <Card img={item.img} rating={item.rating} title={item.title} location={item.location}
+                    price={item.price} specifications={item.specifications}/>
     )
 
     return(
         <View style={styles.container}>
             <Text style={styles.text}>Inmobiliaria</Text>
             <FlatList 
-                data={data.houses}
+                data={data}
                 renderItem={renderItem}
                 keyExtractor={item=> item.id}   
             
